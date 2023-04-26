@@ -220,6 +220,11 @@ Resources:
      Auth:
           Type: OAUTH
           Resource: !Ref CodeBuildSourceCredential
+     TimeoutInMinutes: 10
+     RetryConfig:
+        RetryAttempts: 2
+        RetryDelaySeconds: 60
+          
 
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
