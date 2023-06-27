@@ -21,3 +21,16 @@ Resources:
         FromPort: 22
         IpProtocol: tcp
         ToPort: 22
+  KMSkey:
+    Type: AWS::KMS::Key
+    Properties: 
+      Description: sample kms key
+      Enabled: Boolean
+      EnableKeyRotation: Boolean
+      KeyPolicy: Json
+      KeySpec: SYMMETRIC_DEFAULT
+      KeyUsage: ENCRYPT_DECRYPT
+      MultiRegion: true
+      PendingWindowInDays: 30
+      Tags: 
+        - Tag
