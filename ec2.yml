@@ -11,7 +11,7 @@ Resources:
   WebServerSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      GroupDescription: "Enable HTTP access via port 80 + SSH Access"
+      GroupDescription: "enable HTTP access via port 80 + SSH Access"
       SecurityGroupIngress:
       - CidrIp: 0.0.0.0/0
         FromPort: 80
